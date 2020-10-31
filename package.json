@@ -1,0 +1,45 @@
+{
+    "name": "lh5810-asm",
+    "displayName": "lh5801 Assembly",
+    "description": "lh5801 Assembly support for Visual Studio Code",
+    "version": "0.0.3",
+    "icon": "logo.png",
+    "author": "Jeff Birt",
+    "publisher": "Soigeneris",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "assembly",
+        "lh5801",
+        "sharp",
+        "trs-80"
+    ],
+    "license": "SEE LICENSE IN LICENSE",
+    "contributes": {
+        "languages": [
+            {
+                "id": "lh5801-asm",
+                "aliases": [
+                    "lh5801 Assembly"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".s",
+                    ".$C"
+                ],
+                "configuration": "./lh5801-asm.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lh5801-asm",
+                "scopeName": "source.asm.lh5801",
+                "path": "./syntaxes/lh5801-asm.tmLanguage"
+            }
+        ]
+    }
+}
